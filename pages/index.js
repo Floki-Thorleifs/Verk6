@@ -21,13 +21,15 @@ export default function Home(props) {
 
   return (
     <Layout title="Gögn">
-      <Data loading={loading} data={data} onFetchNewData={onFetchNewData} />
+      <Todos loading={loading} data={data} onFetchNewData={onFetchNewData} />
+      <Form />
     </Layout>
   );
 }
 
 Home.getInitialProps = async ({ req }) => {
-  const data = await getData();
+  const data = await getTodos();
+  console.log(data);
 
   return { initialData: data };
 };

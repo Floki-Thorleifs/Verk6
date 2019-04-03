@@ -16,17 +16,9 @@ export default function Form(props) {
   const [loading, setLoading] = useState(false);
   const [errors, setErrors] = useState([]);
 
-  async function onSubmit(e) {
+  async function onSubmit(e) {}
 
-  }
+  function onChange(e) {}
 
-  function onChange(e) {
-
-  }
-
-  return (
-    <form className={css.form} onSubmit={onSubmit}>
-
-    </form>
-  )
+  return <form className={css.form} onSubmit={onSubmit} />;
 }
