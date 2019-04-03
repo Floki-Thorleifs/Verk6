@@ -1,4 +1,8 @@
 /* todo isomorphic-fetch og útfæra köll í vefþjónustu með slóð úr config */
+import 'isomorphic-fetch';
+import getConfig from 'next/config';
+const { publicRuntimeConfig } = getConfig();
+const { apiUrl } = publicRuntimeConfig;
 
 export async function deleteTodo(id) {
   /* todo */

@@ -6,11 +6,6 @@ import TodoDetail from '../components/todo-detail/TodoDetail';
 
 import { getTodo } from '../api';
 
-function Home(props) {
-
-  return (
-    null
-  );
+export default function Home(props) {
+  return null;
 }
-
-export default Home
