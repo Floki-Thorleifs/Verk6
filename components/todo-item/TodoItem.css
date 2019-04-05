@@ -1,6 +1,8 @@
 .item {
   margin-bottom: 10px;
   font-size: 1.5rem;
+  display: flex;
+  flex-direction: row;
 }
 
 .item__link {

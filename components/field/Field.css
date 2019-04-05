@@ -21,3 +21,15 @@
   border: 1px solid #888;
   border-radius: 3px;
 }
+
+.field__due {
+  flex: 3;
+  font-size: 1rem;
+  padding: 8px;
+  align-items: flex-start;
+}
+
+.field__checkbox {
+  flex: 3;
+  margin-right: 60%;
+}

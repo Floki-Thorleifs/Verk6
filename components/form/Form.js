@@ -20,5 +20,14 @@ export default function Form(props) {
 
   function onChange(e) {}
 
-  return <form className={css.form} onSubmit={onSubmit} />;
+  return (
+    <React.Fragment>
+      <form className={css.form} onSubmit={onSubmit}>
+        <h1 className={css.form__header}>Nýtt verkefni</h1>
+        <Field type="text" elem="input" text="Titill:" />
+        <Field type="dateTime-local" elem="input" text="Klárast fyrir:" />
+        <Button>Búa til</Button>
+      </form>
+    </React.Fragment>
+  );
 }

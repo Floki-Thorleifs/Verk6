@@ -29,7 +29,5 @@ export default function Home(props) {
 
 Home.getInitialProps = async ({ req }) => {
   const data = await getTodos();
-  console.log(data);
-
   return { initialData: data };
 };
